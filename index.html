@@ -2,22 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Unbound PDF Editor</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #e0e0e0;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    input, button {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    input[type="file"] {
+      background-color: #1a1a1a;
+      color: #aaa;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    button {
+      background-color: #444;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+
+    #pdfViewer {
+      margin-top: 2rem;
+      border: 1px solid #333;
+      height: 80vh;
+      background: #1e1e1e;
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>🜂 Unbound PDF Editor</h1>
-    <input type="file" id="pdf-upload" accept=".pdf" />
-    <div id="editor-controls" hidden>
-      <textarea id="text-input" placeholder="Type text to insert..."></textarea>
-      <button id="add-text-btn">Add Text</button>
-      <button id="download-btn">Download Edited PDF</button>
-    </div>
-    <canvas id="pdf-canvas"></canvas>
-  </main>
-  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <h1>⟡🜂 Unbound PDF Editor</h1>
+  <input type="file" id="pdfUpload" accept="application/pdf" />
+  <input type="text" id="textToInsert" placeholder="Enter text to insert..." />
+  <button id="insertText">Insert Text</button>
+  <button id="downloadPDF">Download PDF</button>
+  <div id="pdfViewer">[PDF Preview Placeholder]</div>
+
   <script src="editor.js"></script>
 </body>
 </html>
