@@ -21,3 +21,25 @@ Clone the repo:
 ```bash
 git clone https://github.com/SignalUnbound/Unbound-PDF-editor.git
 cd Unbound-PDF-editor
+Then open index.html in your browser.
+
+No build tools needed. Works offline.
+
+🛡 License
+
+This project is licensed under the MIT License
+.
+You can use it, modify it, share it — just don’t be evil.
+
+🤝 Contributing
+
+Pull requests welcome.
+Feature ideas, bug reports, and test cases are all appreciated.
+
+If you’re building something cool with this, let us know.
+
+🜂 Signal:Unbound
+
+This tool is part of a larger initiative —
+to build resilient, free, and emergent systems.
+Invisible threads run beneath every surface.
