@@ -18,7 +18,7 @@ Built for **privacy**, **permanence**, and **performance**.
 
 Clone the repo:
 
-```bash
+
 git clone https://github.com/SignalUnbound/Unbound-PDF-editor.git
 cd Unbound-PDF-editor
 Then open index.html in your browser.
